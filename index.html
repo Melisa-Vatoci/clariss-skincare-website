@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clariss Skin Care: Glowing Skin, Naturally</title>
+  <meta name="description" content="Clariss Skin Care: serums, moisturizers, toners and sunscreens made with natural ingredients and effective formulas.">
+  <meta name="theme-color" content="#f7f2eb">
+  <link rel="icon" href="img/hero-illustration.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Clariss home">
+        <img src="img/logo.png" alt="Clariss" width="160" height="32">
+      </a>
+
+      <nav class="nav" aria-label="Main">
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="index.html" class="is-current" aria-current="page">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="shop.html?search" class="icon-btn" aria-label="Search products"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="shop.html?wishlist" class="icon-btn" aria-label="Wishlist">
+          <i class="fa-regular fa-heart"></i><span class="badge" data-wish-count hidden>0</span>
+        </a>
+        <button class="icon-btn" data-open-cart aria-label="Open cart" aria-controls="cart-drawer">
+          <i class="fa-solid fa-bag-shopping"></i><span class="badge" data-cart-count hidden>0</span>
+        </button>
+        <button class="icon-btn nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Clean · Gentle · Effective</p>
+          <h1>Discover the secret of <em>glowing skin</em></h1>
+          <p class="lead">Advanced formulas and natural ingredients that give your skin an extraordinary glow, every day.</p>
+          <div class="hero-actions">
+            <a href="shop.html" class="btn btn-primary">Shop products</a>
+            <a href="#about" class="btn btn-outline">Our philosophy</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>23+</strong><span>Products</span></li>
+            <li><strong>98%</strong><span>Natural origin</span></li>
+            <li><strong>4.9★</strong><span>Customer rating</span></li>
+          </ul>
+        </div>
+        <div class="hero-art">
+          <img src="img/hero-illustration.png" alt="Line illustration of a woman with glowing skin" width="444" height="444">
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Bestsellers</p>
+            <h2>What's trending</h2>
+          </div>
+          <a href="shop.html" class="link-arrow">View all products <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="product-grid" id="featured-grid"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container about-inner">
+        <div class="about-media reveal">
+          <img src="img/about.jpg" alt="Clariss skincare products arranged on a table" loading="lazy">
+        </div>
+        <div class="about-text reveal">
+          <p class="eyebrow">Our philosophy</p>
+          <h2>We believe in our ingredients</h2>
+          <p>Natural ingredients provide gentle yet effective care: they nourish and protect your skin without harsh toxins. Every formula is made for a specific skin need, so you see real results.</p>
+          <ul class="features">
+            <li>
+              <span class="feature-icon"><i class="fa-brands fa-pagelines"></i></span>
+              <div><h3>Natural ingredients</h3><p>Plant-based actives, free of parabens and sulfates.</p></div>
+            </li>
+            <li>
+              <span class="feature-icon"><i class="fa-solid fa-dna"></i></span>
+              <div><h3>Effective formulas</h3><p>Proven actives at concentrations that work.</p></div>
+            </li>
+            <li>
+              <span class="feature-icon"><i class="fa-solid fa-recycle"></i></span>
+              <div><h3>Recyclable packaging</h3><p>Better for your skin and for the planet.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo banners -->
+    <section class="section">
+      <div class="container banners">
+        <a href="shop.html?category=Serum" class="banner banner-spring reveal">
+          <div class="banner-content">
+            <p class="eyebrow">New products</p>
+            <h2>Discover our spring skincare</h2>
+            <span class="btn btn-light">Explore more</span>
+          </div>
+        </a>
+        <a href="shop.html" class="banner banner-sale reveal">
+          <div class="banner-content">
+            <p class="eyebrow">Limited time</p>
+            <h2>25% off everything</h2>
+            <span class="btn btn-light">Shop the sale</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-head section-head-center">
+          <p class="eyebrow">Reviews</p>
+          <h2>Loved by our customers</h2>
+        </div>
+        <div class="testimonial-grid">
+          <figure class="testimonial reveal">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"The Vitamin C serum made a visible difference in two weeks. My skin finally looks bright again."</blockquote>
+            <figcaption>Ana K. · Tirana</figcaption>
+          </figure>
+          <figure class="testimonial reveal">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"A sunscreen that leaves no white cast and sits well under makeup. I've already reordered."</blockquote>
+            <figcaption>Elira M. · Durrës</figcaption>
+          </figure>
+          <figure class="testimonial reveal">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Gentle on my sensitive skin, and I love that the packaging is recyclable."</blockquote>
+            <figcaption>Sara D. · Shkodër</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="img/logo.png" alt="Clariss" width="140" height="28">
+        <p>Skincare made with natural ingredients and effective formulas.</p>
+        <ul class="contact-list">
+          <li><i class="fa-regular fa-envelope"></i> clariss.skincare@gmail.com</li>
+          <li><i class="fa-solid fa-phone"></i> +355 2222 111</li>
+          <li><i class="fa-solid fa-location-dot"></i> Tirana, Albania</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <p>Stay up to date with our latest products and discounts.</p>
+        <form class="newsletter-form" novalidate>
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input type="email" id="newsletter-email" placeholder="Your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+      <div>
+        <h3>Follow us</h3>
+        <ul class="social">
+          <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2024</span> Clariss Skin Care. A fictional brand built as a front-end portfolio project.</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
